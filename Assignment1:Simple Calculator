@@ -1,18 +1,14 @@
 //Code: C program to implement a simple calculator that performs addition,subtraction,multiplication & division based on user input.
 //Author: Saba Raushan Hussain
 #include <stdio.h>
-
-// Function with arguments and with return value
 int add(int a, int b) {
     return a + b;
 }
 
-// Function with arguments and without return value
 void multiply(int a, int b) {
     printf("Multiplication: %d * %d = %d\n", a, b, a * b);
 }
 
-// Function without arguments and with return value
 float divide() {
     int a, b;
     printf("Enter two numbers for division (numerator and denominator): ");
@@ -26,7 +22,6 @@ float divide() {
     }
 }
 
-// Function without arguments and without return value
 void printMenu() {
     printf("\nSimple Calculator Menu:\n");
     printf("1. Addition\n");
@@ -46,21 +41,21 @@ int main() {
         
         switch (choice) {
             case 1:
-                // Using function with arguments and with return value (Addition)
+            
                 printf("Enter two numbers for addition: ");
                 scanf("%d%d", &num1, &num2);
                 printf("Addition: %d + %d = %d\n", num1, num2, add(num1, num2));
                 break;
                 
             case 2:
-                // Using function with arguments and without return value (Multiplication)
+               
                 printf("Enter two numbers for multiplication: ");
                 scanf("%d%d", &num1, &num2);
                 multiply(num1, num2);
                 break;
                 
             case 3:
-                // Using function without arguments and with return value (Division)
+                
                 result = divide();
                 if (result == -1) {
                     printf("Division could not be performed.\n");
@@ -70,7 +65,7 @@ int main() {
                 break;
                 
             case 4:
-                // Exit the program
+               
                 printf("Exiting...\n");
                 return 0;
                 
