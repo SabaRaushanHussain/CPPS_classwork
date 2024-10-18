@@ -1,0 +1,23 @@
+//Code: C program to pass a string as a parameter and find the length of the string using length function.
+//Author: Saba Raushan Hussain
+
+#include <stdio.h>
+#include <string.h>  
+
+
+void findLength(char str[]) {
+    int length = strlen(str);  
+    printf("The length of the string is: %d\n", length);
+}
+
+int main() {
+    char str[100];
+
+    printf("Enter a string: ");
+    scanf("%s", str);  
+    
+    findLength(str);
+
+    return 0;
+}
+
